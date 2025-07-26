@@ -98,7 +98,6 @@ export const TradingDashboard = () => {
     { name: "SMC (Smart Money)", accuracy: 87, trades: 156, pnl: "+$12,450", status: "active" as const },
     { name: "ICT (Inner Circle)", accuracy: 82, trades: 203, pnl: "+$8,720", status: "active" as const },
     { name: "ORB (Opening Range)", accuracy: 75, trades: 89, pnl: "+$5,340", status: "learning" as const },
-    { name: "CTR (Countertrend)", accuracy: 69, trades: 67, pnl: "-$1,200", status: "standby" as const },
     { name: "Turtle Soup", accuracy: 73, trades: 45, pnl: "+$2,890", status: "learning" as const },
   ];
 
