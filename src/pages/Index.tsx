@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { HeroSection } from "@/components/HeroSection";
 import { TradingDashboard } from "@/components/TradingDashboard";
+import { MarketMindDiagram } from "@/components/MarketMindDiagram";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -174,6 +175,17 @@ const Index = () => {
               <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* System Architecture Section */}
+      <section className="py-20 px-6 bg-muted/10">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">System Architecture</h2>
+            <p className="text-xl text-muted-foreground">MarketMind AI Data Flow & Processing Pipeline</p>
+          </div>
+          <MarketMindDiagram />
         </div>
       </section>
 
