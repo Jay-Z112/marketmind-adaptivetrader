@@ -1,24 +1,32 @@
-import { useState, useEffect } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useState, useEffect } from 'react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Progress } from '@/components/ui/progress';
 import { 
   Brain, 
   TrendingUp, 
   TrendingDown, 
-  Activity, 
   DollarSign, 
-  Shield, 
-  Zap,
-  Target,
-  BarChart3,
+  Target, 
+  BarChart3, 
   Settings,
   Play,
   Pause,
-  Bot
-} from "lucide-react";
+  Wifi,
+  WifiOff,
+  AlertTriangle,
+  CheckCircle2,
+  Clock,
+  Activity
+} from 'lucide-react';
+import { MT5LoginDialog } from './MT5LoginDialog';
+import { TradeHistory } from './TradeHistory';
+import { mt5Connection } from '@/lib/mt5/connection';
+import { mt5Auth } from '@/lib/mt5/auth';
+import { marketMindCore } from '@/lib/marketmind/core';
+import { tradeManager } from '@/lib/trading/tradeManager';
 
 interface MetricCardProps {
   title: string;
